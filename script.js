@@ -8,14 +8,14 @@ chart.dataSource.url =
 // Create axes
 // var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
 let dateAxis = chart.xAxes.push(new am4charts.DateAxis());
-dateAxis.dateFormats.setKey("day", "[font-size: 12px]dd");
-dateAxis.periodChangeDateFormats.setKey("month", "[bold]yyyy");
+dateAxis.dateFormats.setKey("day", "[font-size: 13px]dd");
+// dateAxis.periodChangeDateFormats.setKey("month", "[bold]MM");
 
 dateAxis.gridIntervals.setAll([
 	{ timeUnit: "day", count: 1 },
 	{ timeUnit: "day", count: 3 },
 ]);
-dateAxis.dateFormatter.dateFormat = "dd";
+// dateAxis.dateFormatter.dateFormat = "dd";
 
 // categoryAxis.dataFields.category = "ts";
 // categoryAxis.title.text = "Date";
